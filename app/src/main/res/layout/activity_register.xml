@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/Remail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/Rusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="usename"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/Rpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RegisterButton"
+            android:text="Register"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Click Here To Login"
+            android:onClick="onClick"
+            android:id="@+id/OnClickRegister"/>
+    </LinearLayout>
+
+</LinearLayout>
